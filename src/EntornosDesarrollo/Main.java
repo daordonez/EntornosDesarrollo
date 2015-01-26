@@ -22,6 +22,14 @@ public class Main {
         //Uso del tercer constructor
         Persona persona3 = new Persona("Miguel", "Fernandez", 'M');
         
+        //Crear objeto de tipo profesor
+        
+        Profesor profesor1 = new Profesor("Diego", "Ordonez", 'M', "PROG", 3456);
+        
+        profesor1.mostrar();
+        System.out.println("-------------------");
+        
+        
         //Mostrar valores que se almacenan para los objetos
         persona1.mostrar();
         System.out.println("-------------------");
