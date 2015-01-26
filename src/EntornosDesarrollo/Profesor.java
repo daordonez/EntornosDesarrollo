@@ -10,19 +10,34 @@ package EntornosDesarrollo;
  * @author diegordonez
  */
 public class Profesor extends Persona{
-    private String asignatura;
+    private String asignatura = null ;
     private int codigoP = 0;
     
     //Constructor
-    public Profesor(String nombre,String apellido, char genero,String asig, int codigoP){
+    public Profesor(String nombre,String apellido, char genero, String asig, int codigoP){
         super(nombre, apellido, genero);
         this.asignatura = asig;
-        this.codigoP = codigoP;
-        
-        //Inicializar
-        asignatura = null;
+        this.codigoP = codigoP;  
     }
-    
+    /*
+        SETERS
+        Normalmente los seters no devuelven nada, sino que simplemente reciben el parametro que se 
+        desea modificar. En el caso de devolver algo simplmente para confirmar que se ha modificado
+        Los setters son especialmente utiles para establecer las reglas de modificado de un objeto,
+        pudiendo establecer parametros como cantidad de caractres, manera de introducir...
+    */
+    public void setAsignatura(String asig){
+        this.asignatura = asig;
+    }
+    /*
+        GETTERS
+        Mediante estos métodos es como se recogen los datos desde los objetos, con caracteristicas similares 
+        a los setters.
+        El retorno debe ser , normalmente, del mismo tipo que el parametro que se pasa
+    */
+    public String getAsignatura(String asig){
+        return this.asignatura;
+    }
     //MUY IMPORTANTE
     //Mediante esta palabra es especifica que el metodo que existe en padre "mostrar" se va a mostrar
     @Override

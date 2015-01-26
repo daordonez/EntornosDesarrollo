@@ -9,9 +9,13 @@ package EntornosDesarrollo;
  *
  * @author diegordonez
  */
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        
+      
         
         //Creación de un nuevo objeto obedeciendo  a la clse persona
         Persona persona1 = new Persona("Diego", "Ordonez");
@@ -24,10 +28,14 @@ public class Main {
         
         //Crear objeto de tipo profesor
         
+        
         Profesor profesor1 = new Profesor("Diego", "Ordonez", 'M', "PROG", 3456);
         
         profesor1.mostrar();
         System.out.println("-------------------");
+        
+        
+        
         
         
         //Mostrar valores que se almacenan para los objetos

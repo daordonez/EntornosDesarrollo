@@ -11,10 +11,70 @@ package EntornosDesarrollo;
  */
 public class Persona {
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        if (nombre.length() <= 3) {
+            
+        }else{
+            this.nombre = nombre;
+        }
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public String getColorPelo() {
+        return colorPelo;
+    }
+
     /*
-     Para el uso de esta clase será necesario invocarlo desde el main donde se le pasa el nombre del nuevo objeto
-     se le indica que va ser un nuevo objeto , y los atributos necesarios dependiendo del método empleado.
+    Para el uso de esta clase será necesario invocarlo desde el main donde se le pasa el nombre del nuevo objeto
+    se le indica que va ser un nuevo objeto , y los atributos necesarios dependiendo del método empleado.
      */
+    public void setColorPelo(String colorPelo) {
+        this.colorPelo = colorPelo;
+    }
+
     private String nombre;
     private String apellido;
     private int altura;
@@ -53,6 +113,16 @@ public class Persona {
         this.nif = "unknow";
         this.colorPelo = "unknow";
     }
+    
+    //Getters y setters
+     
+    public void setNif (String nif){
+        this.nif = nif;
+    }
+    public String getNif(){
+        return this.nif;
+    }
+    
     //Segundo constructor
     public Persona(String nombre, String apellido, int edad) {
         //NO se pueden volver a declarar atributos anteriores SI estan ya existen en otro método
